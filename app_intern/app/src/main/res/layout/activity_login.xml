@@ -1,0 +1,93 @@
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+
+    >
+    <RelativeLayout
+        xmlns:tools = "http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height = "match_parent"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView"
+            android:src="@drawable/login_page_logo"
+            android:layout_centerHorizontal="true"
+            android:paddingBottom="@dimen/padbot"
+            android:paddingTop="@dimen/padtop"
+            />
+
+        <EditText
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:id = "@+id/username_et"
+            android:hint = "Username"
+            android:text="saket"
+            android:focusable = "true"
+            android:imeOptions="flagNoExtractUi"
+            android:textColorHighlight = "@color/highlight_colour"
+            android:textColorHint = "@color/hint_colour"
+            android:layout_marginTop = "@dimen/padtop"
+            android:layout_below = "@+id/imageView"
+            android:singleLine = "true"
+            />
+
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:text="saket"
+            android:id="@+id/password_et"
+            android:imeOptions="flagNoExtractUi"
+            android:layout_below="@+id/username_et"
+            android:textColorHint = "@color/hint_colour"
+            android:hint="Password"
+            android:singleLine = "true"
+            />
+
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="login"
+            android:id="@+id/button_login"
+            android:layout_below="@+id/password_et"
+            />
+        <TextView
+            android:id="@+id/change_password_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/button_login"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="@dimen/padtop"
+            android:paddingBottom="@dimen/padbot"
+            android:layout_marginBottom="@dimen/pad20"
+            android:layout_marginTop="@dimen/pad20"
+            android:text="Change Password?"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:typeface="monospace" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:visibility="gone"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_alignParentTop="true"
+
+            />
+
+
+    </RelativeLayout>
+
+</ScrollView>

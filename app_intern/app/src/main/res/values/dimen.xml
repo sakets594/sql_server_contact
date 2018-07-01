@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="forgot_text_size">15dp</dimen>
+    <dimen name="forgot_text_pad">30dp</dimen>
+    <dimen name="padleft">10dp</dimen>
+    <dimen name="padright">10dp</dimen>
+    <dimen name="padtop">10dp</dimen>
+    <dimen name="halfpad">5dp</dimen>
+    <dimen name="lineMargin7">7dp</dimen>
+    <dimen name="padbot">10dp</dimen>
+    <dimen name="pad10">10dp</dimen>
+    <dimen name="pad100">100dp</dimen>
+    <dimen name="pad20">20dp</dimen>
+    <dimen name="text20">20sp</dimen>
+    <dimen name="contact_name_try">20sp</dimen>
+    <dimen name="contact_number">13sp</dimen>
+    <dimen name="line_width">1dp</dimen>
+</resources>

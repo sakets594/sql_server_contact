@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_search"
+        android:imeOptions="actionSearch|flagNoExtractUi|flagNoFullscreen"
+        android:icon="@drawable/ic_search_black_24dp"
+        android:orderInCategory="100"
+        android:title="search"
+        app:showAsAction="always"
+        app:actionViewClass="android.support.v7.widget.SearchView"/>
+
+    <item android:id="@+id/sync"
+        android:title="Sync"/>
+    <item android:id="@+id/addContact"
+        android:title="Add Contact"/>
+    <item android:id="@+id/addUser"
+        android:title="Add User" />
+    <item android:id="@+id/listUser"
+        android:title="List User" />
+    <item android:id="@+id/change_password_menu"
+        android:title="change password" />
+    <item android:id="@+id/log_out"
+        android:title="logout"/>
+</menu>

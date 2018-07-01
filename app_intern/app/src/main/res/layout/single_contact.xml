@@ -1,0 +1,85 @@
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/contact"
+
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/contact_name"
+        android:text="sdfsd"
+        android:textSize="@dimen/contact_name_try"
+        android:textColor="@android:color/black"
+        android:layout_toLeftOf="@+id/vertical_line2"
+        android:layout_alignParentLeft="true"
+        android:ellipsize="end"
+        android:maxLines="1"
+        />
+    <TextView
+        android:layout_below="@id/contact_name"
+        android:id="@+id/contact_number"
+        android:text="919299374"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/contact_number"
+        android:textColor="@color/contact_number"
+        android:layout_marginBottom="@dimen/pad10"
+        android:layout_toLeftOf="@+id/vertical_line2"
+        android:layout_alignParentLeft="true"
+        />
+    <!-- add later android:layout_centerVertical="true"-->
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/call_btn"
+        android:background="@drawable/call_icon"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/pad10"
+        />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/email_btn"
+        android:background="@drawable/email_icon"
+        android:layout_toLeftOf="@+id/vertical_line1"
+        android:layout_marginTop="@dimen/pad10"
+        />
+
+
+
+
+
+
+    <ImageView
+        android:layout_height="match_parent"
+        android:layout_width="@dimen/line_width"
+        android:background="@color/line_color"
+        android:layout_toLeftOf="@+id/email_btn"
+        android:id="@+id/vertical_line2"
+        android:layout_marginRight="@dimen/lineMargin7"
+
+        />
+    <ImageView
+        android:layout_height="match_parent"
+        android:layout_width="@dimen/line_width"
+        android:background="@color/line_color"
+        android:layout_toLeftOf="@+id/call_btn"
+        android:id="@+id/vertical_line1"
+        android:layout_marginRight="@dimen/lineMargin7"
+        android:layout_marginLeft="@dimen/lineMargin7"
+        />
+
+    <ImageView
+
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_width"
+        android:layout_marginBottom="@dimen/pad10"
+        android:background="@color/line_color"
+        android:layout_below="@id/contact_number"
+        />
+
+</RelativeLayout>

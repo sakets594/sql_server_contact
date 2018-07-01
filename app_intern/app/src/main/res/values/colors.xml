@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#006470</color>
+    <color name="colorPrimaryDark">#006470</color>
+    <color name="colorAccent">#7ee999</color>
+    <color name="hint_colour">#ffff25e6</color>
+    <color name="highlight_colour">#ffff25e6</color>
+    <color name="line_color">#ce9aad</color>
+    <color name="contact_number">#ea0e6c70</color>
+</resources>

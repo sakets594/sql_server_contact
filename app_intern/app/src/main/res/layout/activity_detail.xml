@@ -1,0 +1,220 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="@dimen/pad20"
+        android:paddingBottom="@dimen/pad20"
+        android:layout_gravity="center_vertical"
+        >
+        <TextView
+            android:id="@+id/name_title_tv"
+            android:layout_width="@dimen/pad100"
+            android:layout_height="wrap_content"
+            android:text="Name :"
+            android:textSize="@dimen/text20"
+            android:gravity="right"
+            android:padding="@dimen/pad10"
+            android:maxLines="1"
+            />
+
+        <TextView
+            android:id="@+id/phone_title_tv"
+            android:layout_below="@+id/name_tv"
+            android:layout_width="@dimen/pad100"
+            android:layout_height="wrap_content"
+            android:text="Phone :"
+            android:textSize="@dimen/text20"
+            android:gravity="right"
+            android:padding="@dimen/pad10"
+            android:maxLines="1"
+            />
+        <TextView
+            android:id="@+id/email_title_tv"
+            android:layout_below="@id/phone_tv"
+            android:layout_width="@dimen/pad100"
+            android:layout_height="wrap_content"
+            android:text="Email :"
+            android:textSize="@dimen/text20"
+            android:gravity="right"
+            android:padding="@dimen/pad10"
+            android:maxLines="1"
+            />
+        <TextView
+            android:id="@+id/website_title_tv"
+            android:layout_below="@id/email_tv"
+            android:layout_width="@dimen/pad100"
+            android:layout_height="wrap_content"
+            android:text="Website :"
+            android:textSize="@dimen/text20"
+            android:gravity="right"
+            android:padding="@dimen/pad10"
+            android:ellipsize="end"
+            android:maxLines="1"
+
+            />
+        <TextView
+            android:id="@+id/city_title_tv"
+            android:layout_below="@id/website_tv"
+            android:layout_width="@dimen/pad100"
+            android:layout_height="wrap_content"
+            android:text="City :"
+            android:textSize="@dimen/text20"
+            android:gravity="right"
+            android:padding="@dimen/pad10"
+            android:maxLines="1"
+            />
+        <TextView
+            android:id="@+id/state_title_tv"
+            android:layout_below="@id/city_tv"
+            android:layout_width="@dimen/pad100"
+            android:layout_height="wrap_content"
+            android:text="State :"
+            android:textSize="@dimen/text20"
+            android:gravity="right"
+            android:padding="@dimen/pad10"
+            android:maxLines="1"
+            />
+        <TextView
+            android:id="@+id/country_title_tv"
+            android:layout_below="@id/state_tv"
+            android:layout_width="@dimen/pad100"
+            android:layout_height="wrap_content"
+            android:text="Country :"
+            android:textSize="@dimen/text20"
+            android:gravity="right"
+            android:padding="@dimen/pad10"
+            android:maxLines="1"
+            />
+        <Button
+            android:visibility="gone"
+            android:id="@+id/save_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="save"
+            android:layout_below="@+id/country_tv"
+            android:layout_centerHorizontal="true"
+            android:padding="@dimen/pad10"
+            android:layout_alignParentBottom="true"
+            />
+
+
+        <TextView
+            android:id="@+id/name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/name_title_tv"
+            android:layout_alignParentRight="true"
+            android:text="name is too logng to fit in single line"
+            android:textSize="@dimen/text20"
+            android:padding="@dimen/pad10"
+            />
+
+        <TextView
+            android:id="@+id/phone_tv"
+            android:layout_below="@+id/name_tv"
+            android:layout_toRightOf="@+id/phone_title_tv"
+            android:layout_toLeftOf="@+id/call_btn"
+            android:layout_width="@dimen/pad100"
+            android:layout_height="wrap_content"
+            android:text="9998887771328"
+            android:textSize="@dimen/text20"
+            android:padding="@dimen/pad10"
+            android:ellipsize="end"
+            />
+        <TextView
+            android:id="@+id/email_tv"
+            android:layout_below="@id/phone_tv"
+            android:layout_width="@dimen/pad100"
+            android:layout_height="wrap_content"
+            android:text="example@le.com"
+            android:textSize="@dimen/text20"
+            android:padding="@dimen/pad10"
+            android:layout_toLeftOf="@+id/email_btn"
+            android:layout_toRightOf="@+id/email_title_tv"
+            />
+        <TextView
+            android:id="@+id/website_tv"
+            android:layout_below="@id/email_tv"
+            android:layout_width="@dimen/pad100"
+            android:layout_height="wrap_content"
+            android:text="Website.co.in"
+            android:textSize="@dimen/text20"
+            android:padding="@dimen/pad10"
+            android:layout_toRightOf="@+id/email_title_tv"
+            android:layout_alignParentRight="true"
+            />
+        <TextView
+            android:id="@+id/city_tv"
+            android:layout_below="@id/website_tv"
+            android:layout_width="@dimen/pad100"
+            android:layout_height="wrap_content"
+            android:text="city is too logng to fit in single line"
+            android:textSize="@dimen/text20"
+            android:padding="@dimen/pad10"
+            android:layout_toRightOf="@+id/email_title_tv"
+            android:layout_alignParentRight="true"
+            />
+        <TextView
+            android:id="@+id/state_tv"
+            android:layout_below="@id/city_tv"
+            android:layout_width="@dimen/pad100"
+            android:layout_height="wrap_content"
+            android:text="name is too logng to fit in single line"
+            android:textSize="@dimen/text20"
+            android:padding="@dimen/pad10"
+            android:layout_toRightOf="@+id/email_title_tv"
+            android:layout_alignParentRight="true"
+            />
+        <TextView
+            android:id="@+id/country_tv"
+            android:layout_below="@id/state_tv"
+            android:layout_width="@dimen/pad100"
+            android:layout_height="wrap_content"
+            android:text="name is too logng to fit in single line"
+            android:textSize="@dimen/text20"
+            android:padding="@dimen/pad10"
+            android:layout_toRightOf="@+id/email_title_tv"
+            android:layout_alignParentRight="true"
+            />
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/call_btn"
+            android:background="@drawable/call_icon"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/pad10"
+            android:layout_alignTop="@+id/phone_tv"
+            />
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/email_btn"
+            android:background="@drawable/email_icon"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/pad10"
+            android:layout_alignTop="@+id/email_tv"
+
+            />
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/website_btn"
+            android:background="@drawable/globe_icon"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/pad10"
+            android:layout_alignTop="@+id/website_tv"
+            android:layout_below="@+id/email_tv"
+            />
+
+
+
+        
+
+    </RelativeLayout>
+
+</ScrollView>
